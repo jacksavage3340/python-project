@@ -10,5 +10,12 @@ n=input("Enter your name:")
 a=int(input("Enter your age:"))
 print("Hello",n+"! You are",a,"years old.")
 
-
+'''Task 2
+Write a Python program that stores a string in a variable.
+Extract a specific part of the string (substring) and then concatenate it with another string.
+Finally, display the new string.'''
+str1="Hello, World!"
+str2=" Everyone!"
+str3=str1[7:12]+str2
+print(str3)
 
