@@ -1,34 +1,47 @@
-"""Author: Pious Jacob
-Date: 18/10/2024
-Write a Python program that asks the user to input their name and age. After receiving the input,
-display a message that includes the user's name and age.
-Expected Output:
-Enter your name: John
-Enter your age: 25
-Hello, John! You are 25 years old."""
-n=input("Enter your name:")
-a=int(input("Enter your age:"))
-print("Hello",n+"! You are",a,"years old.")
+'''Author: Pious Jacob
+Date: 19/10/2024
+AIM: Write a Python program that performs the following tasks:
 
-'''Task 2
-Write a Python program that stores a string in a variable.
-Extract a specific part of the string (substring) and then concatenate it with another string.
-Finally, display the new string.'''
-str1="Hello, World!"
-str2=" Everyone!"
-str3=str1[7:12]+str2
-print(str3)
-#task2
+    User Input:
+        Ask the user to enter two numbers, num1 and num2.
+        Ask the user to enter a third number, num3.
 
-"""Author: Pious Jacob
-Date: 18/10/2024
-Write a Python program that demonstrates the usage of arithmetic, comparison, and logical operators.
-Perform a few operations and print the results."""
-a=int(input("Enter 1st no:"))
-b=int(input("Enter 2nd no:"))
-print("Sum:",a+b,"Division:",a/b)
-print("Is a greater than b?:",a>b)
-print("Are a and b equal?:",a==b)
-print("Logical AND:",a>0 and b>0)
-print("Logical OR:",a>0 or b>10)
-#taks3
+    Addition:
+        Add the first two numbers (num1 and num2).
+        Print the sum in the format: "The sum of num1 and num2 is: result"
+
+    Subtraction:
+        Subtract num2 from num1.
+        Print the difference in the format: "The difference when num2 is subtracted from num1 is: result"
+
+    Multiplication:
+        Multiply num1 by num2.
+        Print the product in the format: "The product of num1 and num2 is: result"
+
+    Division:
+        Divide num1 by num2.
+        Print the quotient in the format: "The quotient when num1 is divided by num2 is: result"
+
+    Modulus:
+        Find the remainder when num1 is divided by num2.
+        Print the remainder in the format: "The remainder when num1 is divided by num2 is: result"
+
+    Combined Arithmetic Operation:
+        Perform the following combined operation:
+        result = (num1 + num2) * num3 / 2
+        Print the result in the format: "The remainder when num1 is divided by num2 is: result"'''
+num1=int(input("Enter the first no:"))
+num2=int(input("Enter second no:"))
+num3=int(input("Enter the third no:"))
+add=num1+num2
+print("The sum of num1 and num2 is:",add)
+sub=num1-num2
+print("The difference when num2 is subtracted from num1 is:",sub)
+multi=num1*num2
+print("The product of num1 and num2 is:",multi)
+div=num1/num2
+print("The quotient when num1 is divided by num2 is:",div)
+mod=num1%num2
+print("The remainder when num1 is divided by num2 is:",mod)
+ari=(num1+num2)*num3/2
+print("The result of (num1 + num2) * num3 / 2 is:",ari)
